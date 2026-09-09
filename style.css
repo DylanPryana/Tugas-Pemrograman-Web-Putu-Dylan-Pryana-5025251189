@@ -1,0 +1,319 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== KODE WARNA (edit di sini kalau mau ganti tema) ===== */
+:root {
+  --color-bg: #FBF3EC;       /* peach lembut - latar belakang halaman */
+  --color-primary: #6B4226;  /* coklat karamel - navbar, footer, judul */
+  --color-accent: #F3A981;   /* peach - aksen, border, garis */
+  --color-text: #3B2A1E;     /* coklat gelap - teks isi */
+  --color-card: #FFFFFF;     /* putih - latar kartu */
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Semua foto (kotak "X" sekarang jadi gambar sungguhan dari folder assets/) */
+img {
+  display: block;
+  border: 2px solid var(--color-accent);
+  object-fit: cover;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  padding: 18px 80px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-box {
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.site-title {
+  font-size: 1.1rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  gap: 50px;
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.hero-photo {
+  width: 280px;
+  height: 280px;
+  flex-shrink: 0;
+}
+
+.hero-text {
+  max-width: 560px;
+}
+
+.hero-text .eyebrow {
+  font-weight: bold;
+  color: var(--color-accent);
+  margin-bottom: 6px;
+}
+
+.hero-text h1 {
+  font-size: 1.9rem;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+
+.hero-text .location {
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* ===== SECTION UMUM ===== */
+.section {
+  padding: 40px 80px 10px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Baris untuk Pendidikan */
+.row-card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  background-color: var(--color-card);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 18px;
+}
+
+.row-year {
+  flex-shrink: 0;
+  width: 150px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Pengalaman */
+.experience-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.experience-text {
+  flex-grow: 1;
+}
+
+.exp-item {
+  margin-bottom: 22px;
+}
+
+.experience-photo {
+  width: 320px;
+  height: 320px;
+  flex-shrink: 0;
+}
+
+/* Skills */
+.skill-big-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.skill-big-card h3 {
+  margin-top: 10px;
+}
+
+.skill-photo {
+  width: 100%;
+  height: 220px;
+}
+
+.skill-small-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skill-small-item {
+  text-align: center;
+  width: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 8px auto;
+  border-radius: 50%;
+}
+
+/* Projects */
+.project-photo {
+  width: 100%;
+  height: 340px;
+  margin: 24px 0 30px 0;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.project-item {
+  display: flex;
+  gap: 20px;
+}
+
+.project-item .row-year {
+  color: var(--color-accent);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  padding: 40px 80px;
+  margin-top: 30px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.footer-col a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+  color: var(--color-accent);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.icon-box {
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+/* ===== RESPONSIF ===== */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 24px;
+  }
+  .navbar-right {
+    flex-wrap: wrap;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+  .section {
+    padding: 40px 24px 10px 24px;
+  }
+  .footer {
+    padding: 40px 24px;
+  }
+  .experience-layout {
+    flex-direction: column;
+  }
+  .experience-photo {
+    width: 100%;
+  }
+  .skill-big-grid {
+    grid-template-columns: 1fr;
+  }
+}
